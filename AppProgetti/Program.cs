@@ -10,6 +10,7 @@ namespace AppProgetti
     {
         static void Main(string[] args)
         {
+
         }
     }
 }
