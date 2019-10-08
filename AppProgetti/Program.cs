@@ -13,7 +13,7 @@ namespace AppProgetti
         {
             Console.WriteLine("Esercitazione sulla gestione dei processi");
 
-            Process.Start(@"\\DC01SRV\_Condivisa\INF\4 A\Palugini Simone\AppProgetti\AppProgetti\HelloWorld.txt");
+            //Process.Start(@"C:\Users\studenti\Source\Repos\GestioneProcessi\AppProgetti\HelloWorld.txt");
             Process.Start("Chrome.exe", @"https://www.inter.it/it/squadra/G0943/tommaso-berni");
 
             var app = new Process();
@@ -27,12 +27,12 @@ namespace AppProgetti
             var processes = Process.GetProcesses();
             foreach(var p in processes)
             {
-                if (p.ProcessName = "Notepad")
+                if (p.ProcessName == "Notepad")
                 {
                     p.Kill();
                 }
             }
-
+            
 
             Console.WriteLine("Programma terminato");
             Console.ReadLine();
