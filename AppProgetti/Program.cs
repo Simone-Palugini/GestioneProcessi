@@ -18,7 +18,7 @@ namespace AppProgetti
 
             var app = new Process();
             app.StartInfo.FileName = @"Notepad.exe";
-            app.StartInfo.Arguments = @"\\DC01SRV\_Condivisa\INF\4 A\Palugini Simone\AppProgetti\AppProgetti\HelloWorld.txt";
+            app.StartInfo.Arguments = @"C:\Users\studenti\Source\Repos\GestioneProcessi\AppProgetti\HelloWorld.txt";
             app.Start();
             app.PriorityClass = ProcessPriorityClass.RealTime;
             //app.WaitForExit();
